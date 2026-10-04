@@ -1,274 +1,205 @@
+Updated HTML with Ally moved to October 6 and Anna and Cora added for 5–6 PM:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EHVB | Current Calendar Events</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<title>EHVB | Current Calendar Events</title>
+    body {
+      margin: 0;
+      background: #f4f5f7;
+      color: #20232b;
+      font-family: Arial, sans-serif;
+    }
 
-<style>
+    main {
+      max-width: 850px;
+      margin: auto;
+      padding: 40px 28px;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    /* BACK BUTTON */
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #d71920;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-body {
-  margin: 0;
-  background: #f4f5f7;
-  color: #20232b;
-  font-family: Arial, sans-serif;
-}
+    .back-link:hover {
+      text-decoration: underline;
+    }
 
-main {
-  max-width: 850px;
-  margin: auto;
-  padding: 40px 28px;
-}
+    /* PAGE HEADER */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 48px);
+    }
 
-/* BACK BUTTON */
+    /* EVENT CARDS */
+    .events {
+      display: grid;
+      gap: 28px;
+    }
 
-.back-link {
-  display: inline-block;
-  margin-bottom: 30px;
-  color: #d71920;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: none;
-}
+    .event-card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px #0002;
+    }
 
-.back-link:hover {
-  text-decoration: underline;
-}
+    .event-header {
+      background: #d71920;
+      color: white;
+      padding: 18px 22px;
+      text-align: center;
+    }
 
+    .event-header h2 {
+      margin: 0;
+      font-size: 24px;
+    }
 
-/* PAGE HEADER */
+    /* PLAYER TIMES */
+    .signup {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 24px;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 19px;
+    }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
+    .signup:last-child {
+      border-bottom: none;
+    }
 
-h1 {
-  margin: 0;
-  font-size: clamp(32px, 5vw, 48px);
-}
+    .player {
+      font-weight: bold;
+    }
 
+    .time {
+      color: #626975;
+      font-weight: bold;
+    }
 
-/* EVENT CARDS */
+    /* MOBILE */
+    @media (max-width: 600px) {
+      main {
+        padding: 25px 18px;
+      }
 
-.events {
-  display: grid;
-  gap: 28px;
-}
+      .event-header h2 {
+        font-size: 20px;
+      }
 
-.event-card {
-  background: white;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px #0002;
-}
-
-.event-header {
-  background: #d71920;
-  color: white;
-  padding: 18px 22px;
-  text-align: center;
-}
-
-.event-header h2 {
-  margin: 0;
-  font-size: 24px;
-}
-
-
-/* PLAYER TIMES */
-
-.signup {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 24px;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 19px;
-}
-
-.signup:last-child {
-  border-bottom: none;
-}
-
-.player {
-  font-weight: bold;
-}
-
-.time {
-  color: #626975;
-  font-weight: bold;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-  main {
-    padding: 25px 18px;
-  }
-
-  .event-header h2 {
-    font-size: 20px;
-  }
-
-  .signup {
-    font-size: 17px;
-  }
-
-}
-
-</style>
-
+      .signup {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
 
-
 <body>
+  <main>
+    <!-- BACK TO HOME -->
+    <a class="back-link" href="index.html">
+      ← Back to EHVB
+    </a>
 
-<main>
+    <!-- PAGE TITLE -->
+    <header>
+      <h1>Current Calendar Events</h1>
+    </header>
 
+    <section class="events">
+      <!-- TUESDAY OCTOBER 6 -->
+      <div class="event-card">
+        <div class="event-header">
+          <h2>Tuesday, October 6th @ Force, Court 3</h2>
+        </div>
 
-  <!-- BACK TO HOME -->
+        <div class="signup">
+          <span class="player">Ally</span>
+          <span class="time">5–6 PM</span>
+        </div>
 
-  <a class="back-link" href="index.html">
-    ← Back to EHVB
-  </a>
+        <div class="signup">
+          <span class="player">Maddy</span>
+          <span class="time">6–7 PM</span>
+        </div>
 
-
-  <!-- PAGE TITLE -->
-
-  <header>
-
-    <h1>Current Calendar Events</h1>
-
-  </header>
-
-
-  <section class="events">
-
-
-    <!-- TUESDAY OCTOBER 6 -->
-
-    <div class="event-card">
-
-      <div class="event-header">
-
-        <h2>
-          Tuesday, October 6th @ Force, Court 3
-        </h2>
-
+        <div class="signup">
+          <span class="player">Loren</span>
+          <span class="time">7–8 PM</span>
+        </div>
       </div>
 
+      <!-- FRIDAY OCTOBER 9 -->
+      <div class="event-card">
+        <div class="event-header">
+          <h2>Friday, October 9th @ Order on the Court, Court 3</h2>
+        </div>
 
-      <div class="signup">
-
-        <span class="player">
-          Maddy
-        </span>
-
-        <span class="time">
-          6–7 PM
-        </span>
-
+        <div class="signup">
+          <span class="player">Sophia</span>
+          <span class="time">6–7 PM</span>
+        </div>
       </div>
 
+      <!-- WEDNESDAY OCTOBER 14 -->
+      <div class="event-card">
+        <div class="event-header">
+          <h2>Wednesday, October 14th @ Order, Court 4</h2>
+        </div>
 
-      <div class="signup">
-
-        <span class="player">
-          Loren
-        </span>
-
-        <span class="time">
-          7–8 PM
-        </span>
-
+        <div class="signup">
+          <span class="player">Anna</span>
+          <span class="time">5–6 PM</span>
+        </div>
       </div>
 
-    </div>
+      <!-- THURSDAY OCTOBER 15 -->
+      <div class="event-card">
+        <div class="event-header">
+          <h2>Thursday, October 15th @ Order, Court 4</h2>
+        </div>
 
-
-
-    <!-- FRIDAY OCTOBER 9 -->
-
-    <div class="event-card">
-
-      <div class="event-header">
-
-        <h2>
-          Friday, October 9th @ Order on the Court, Court 3
-        </h2>
-
+        <div class="signup">
+          <span class="player">Cora</span>
+          <span class="time">5–6 PM</span>
+        </div>
       </div>
 
+      <!-- SATURDAY OCTOBER 17 -->
+      <div class="event-card">
+        <div class="event-header">
+          <h2>Saturday, October 17th @ Order, Court 2</h2>
+        </div>
 
-      <div class="signup">
-
-        <span class="player">
-          Ally
-        </span>
-
-        <span class="time">
-          5–6 PM
-        </span>
-
+        <div class="signup">
+          <span class="player">Group Session</span>
+          <span class="time">12–2 PM</span>
+        </div>
       </div>
-
-
-      <div class="signup">
-
-        <span class="player">
-          Sophia
-        </span>
-
-        <span class="time">
-          6–7 PM
-        </span>
-
-      </div>
-
-    </div>
-
-        <!-- SATURDAY OCTOBER 17 -->
-
-<div class="event-card">
-
-  <div class="event-header">
-
-    <h2>
-      Saturday, October 17th @ Order, Court 2
-    </h2>
-
-  </div>
-
-  <div class="signup">
-
-    <span class="player">
-      Group Session
-    </span>
-
-    <span class="time">
-      12–2 PM
-    </span>
-
-  </div>
-
-</div>
-
-  
-  </section>
-
-</main>
-
+    </section>
+  </main>
 </body>
-
 </html>
+```
