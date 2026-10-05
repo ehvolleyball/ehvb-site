@@ -236,6 +236,49 @@ main {
   outline-offset: 5px;
 }
 
+  /* TEXAS STATE VOLLEYBALL FEATURE */
+
+.txstate-feature {
+  max-width: 650px;
+  width: 100%;
+  margin: 55px auto 20px;
+  text-align: center;
+}
+
+.txstate-flyer {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px #0002;
+}
+
+.txstate-flyer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Invisible clickable area over GET YOUR TICKETS */
+
+.ticket-hotspot {
+  position: absolute;
+  left: 21%;
+  width: 61%;
+  bottom: 4.5%;
+  height: 7.5%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.ticket-hotspot:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.ticket-hotspot:focus-visible {
+  outline: 4px solid white;
+  outline-offset: -5px;
+}
 
 /* TABLET */
 
@@ -558,6 +601,40 @@ main {
 
 
   </section>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- TEXAS STATE VOLLEYBALL -->
+
+<section class="txstate-feature">
+
+  <h2 class="section-title">
+    Texas State Volleyball
+  </h2>
+
+  <div class="txstate-flyer">
+
+    <img
+      src="txstate-flyer.png"
+      alt="Texas State Bobcats Volleyball Maroon Madness vs Washington State"
+    >
+
+    <a
+      class="ticket-hotspot"
+      href="https://txstatebobcats.evenue.net/event/VB26/VB09"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Get tickets for Texas State Volleyball"
+      title="Get Your Tickets"
+    ></a>
+
+  </div>
+
+</section>
 
 </main>
 
