@@ -11,7 +11,7 @@
     },
     {
       question: 'How do I request a session?',
-      answer: 'Select the Request a Session button on our website to send a training request.'
+      answer: 'Select the Lessons Sign Ups Image on our website to submit a training request.'
     },
     {
       question: 'Do you offer group training?',
@@ -23,7 +23,7 @@
     },
     {
       question: 'Do athletes get drills for home?',
-      answer: 'Yes! All training options include drills that athletes can practice at home.'
+      answer: 'Yes! All training options include drills that athletes can practice at home in GroupMe.'
     }
   ];
 
