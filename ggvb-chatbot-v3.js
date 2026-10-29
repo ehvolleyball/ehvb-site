@@ -56,10 +56,10 @@
   const root = document.createElement('div');
   root.id = 'ggvb-faq-root';
   root.innerHTML = `
-    <button id="ggvb-faq-launcher" type="button" aria-expanded="false" aria-controls="ggvb-faq-panel">🏐 Ask GGVB</button>
+    <button id="ggvb-faq-launcher" type="button" aria-expanded="false" aria-controls="ggvb-faq-panel">🏐 Ask Griffin</button>
     <section id="ggvb-faq-panel" role="dialog" aria-label="GGVB questions and answers" hidden>
       <header id="ggvb-faq-head">
-        <div><strong>🏐 GGVB Assistant</strong><small>Good Game Volleyball</small></div>
+        <div><strong>🏐 Ask the Griffin!</strong><small>GG's Volleyball</small></div>
         <button type="button" id="ggvb-faq-close" aria-label="Close chatbot">×</button>
       </header>
       <div id="ggvb-faq-content">
