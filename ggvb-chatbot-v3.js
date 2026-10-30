@@ -67,7 +67,7 @@
         <div id="ggvb-faq-options"></div>
         <div id="ggvb-faq-answer" role="status" aria-live="polite" hidden></div>
       </div>
-      <footer id="ggvb-faq-footer">For anything else, use our website's contact options.</footer>
+      <footer id="ggvb-faq-footer">Additional questions please email edwardvolleyball@gmail.com.</footer>
     </section>`;
   document.body.appendChild(root);
 
