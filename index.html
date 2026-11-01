@@ -77,46 +77,19 @@ main {
   margin: 0;
 }
 
-.flyer-link {
-  display: block;
-  width: 100%;
-  border-radius: 12px;
-  text-decoration: none;
-}
-
 .flyer img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 24px #0002;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
 
-.flyer-link:hover img {
-  transform: scale(1.02);
-  box-shadow: 0 12px 28px #0003;
 }
-
-.flyer-link:focus-visible {
-  outline: 3px solid #20232b;
-  outline-offset: 5px;
-}
-
 
 /* REQUEST A SESSION */
 
 .session {
   text-align: center;
-}
-
-.session-link {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  border-radius: 12px;
 }
 
 .session-image {
@@ -125,21 +98,8 @@ main {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 24px #0002;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
 
-.session-link:hover .session-image {
-  transform: scale(1.02);
-  box-shadow: 0 12px 28px #0003;
 }
-
-.session-link:focus-visible {
-  outline: 3px solid #20232b;
-  outline-offset: 5px;
-}
-
 
 /* CURRENT SIGN UPS */
 
@@ -148,9 +108,7 @@ main {
   margin-top: 30px;
 }
 
-.current-signups .section-title {
-  margin-bottom: 14px;
-}
+.session-action { margin-bottom: 18px; }
 
 .signup-list-link {
   display: inline-block;
@@ -175,7 +133,7 @@ main {
   box-shadow: 0 7px 18px #0003;
 }
 
-.signup-list-link::after {
+.current-signups .signup-list-link::after {
   content: "Check the List";
   position: absolute;
   left: 50%;
@@ -193,7 +151,7 @@ main {
   z-index: 10;
 }
 
-.signup-list-link:hover::after {
+.current-signups .signup-list-link:hover::after {
   opacity: 1;
 }
 
@@ -375,23 +333,12 @@ main {
 
     <div class="group-session">
 
-      <h2 class="section-title">Group Sign Up</h2>
+      <a class="signup-list-link session-action" href="session-request.html">
+        Group Sign Up
+      </a>
 
       <figure class="flyer">
-
-        <a
-          class="flyer-link"
-          href="session-request.html"
-          aria-label="Register for the GG's group session"
-        >
-
-        <img
-  src="group.png"
-  alt="Click to sign up for Groups!"
->
-
-        </a>
-
+        <img src="group.png" alt="GG's volleyball group sessions">
       </figure>
 
     </div>
@@ -401,28 +348,18 @@ main {
 
     <div class="session">
 
-      <h2 class="section-title">Lesson SignUps</h2>
-
-      <a
-        class="session-link"
-        href="session-request.html"
-        aria-label="Volleyball Lesson Signups"
-      >
-
-        <img
-          class="session-image"
-          src="lesson.png"
-          alt="GG's volleyball lesson singups"
-        >
-
+      <a class="signup-list-link session-action" href="session-request.html">
+        Lesson Sign Ups
       </a>
+
+      <img class="session-image" src="lesson.png" alt="GG's volleyball lesson signups">
 
 
       <!-- CURRENT SIGN UPS -->
 
       <div class="current-signups">
 
-        <h2 class="section-title">Current Sign Ups</h2>
+
 
         <a
           class="signup-list-link"
@@ -614,11 +551,9 @@ main {
 
 
   </section>
-         </div>
-    </div>
-  </section>
 </main>
 
 <script src="./ggvb-chatbot-v3.js" defer></script>
 </body>
 </html>
+
