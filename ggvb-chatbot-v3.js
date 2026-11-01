@@ -11,11 +11,11 @@
     },
     {
       question: 'How do I request a session?',
-      answer: 'Select the Lessons Sign Ups Image on our website to submit a training request.'
+      answer: 'Select the red button titled Lesson Sign Ups.'
     },
     {
       question: 'Do you offer group training?',
-      answer: 'Yes! We offer small-group training for 2 to 4 athletes.'
+      answer: 'Yes! I offer small-group training for 2 to 4 athletes.'
     },
     {
       question: 'Do you offer video feedback?',
